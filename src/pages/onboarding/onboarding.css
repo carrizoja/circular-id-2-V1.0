@@ -1,0 +1,125 @@
+/* CSS for custom font */
+@font-face {
+  font-family: "Helvetica 65 Medium";
+  src: url("../../assets/fonts/helveticaMedium/HelveticaNeue-Medium\ .otf");
+}
+
+/* CSS for Onboarding Page */ 
+
+.container__onboarding__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto 0;
+  width: 650px;
+}
+
+.container__onboarding__text__title {
+  display: none;
+}
+
+.container__onboarding__text__description {
+  font-size: 30px;
+  text-align:center;
+  font-family: "Helvetica 65 Medium";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  text-align:justify;
+}
+
+.text__description__circularid {
+  color: #459E2E;
+  background-color: var(--primary-color);
+  font-family: "Helvetica 65 Medium";
+  font-size: 30px;
+}
+
+/* set container__onboarding on the center of the page */
+.container__onboarding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  height: 100vh;
+}
+
+.linkToHome {
+  margin-top: 3rem;
+  font-size: 24px;
+  font-family: "Helvetica 65 Medium";
+}
+
+.linkToHome:hover {
+  color:#459E2E;
+  
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 767px) {
+  .container__onboarding__text__description{
+    font-size: 13px;
+  }
+
+  .text__description__circularid{
+    font-size: 13px;
+  }
+
+  .linkToHome {
+    font-size: 17px;
+  }
+
+  .container__onboarding__text {
+    width: 300px;
+    line-height: 15px;
+  }
+
+  .container__onboarding__text__description {
+    line-height: 15px;
+  }
+
+  .linkToHome:hover, .linkToHome:active{
+    color:#459E2E;
+  }
+
+}
+
+/* Media query for mobile */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+  .container__onboarding__text__description{
+    font-size: 20px;
+  }
+
+  .text__description__circularid{
+    font-size: 20px;
+  }
+
+  .linkToHome {
+    font-size: 20px;
+  }
+
+    .container__onboarding__text {
+      width: 575px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
+}
+
+/* Media Query for basic laptops  */
+@media only screen and (min-width: 1024px) and (max-width:1300px) {
+ 
+  .container__onboarding__text__description {
+    font-size: 24px;
+
+  }
+
+
+}
+

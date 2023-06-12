@@ -1,0 +1,880 @@
+/* Custom Font for Servicio */
+@font-face {
+  font-family: "45 Light";
+  src: url("../../assets/fonts/HelveticaNeueLTStd45Light.otf");
+}
+
+@font-face {
+  font-family: "45 Book";
+  src: url("../../assets/fonts/45Book/AvenirLTStd-Book.otf");
+}
+
+
+
+/* CSS for Servicio */
+
+.container__servicios {
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+ /*  height: 80vh; */
+}
+
+.container__servicio {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 40px;
+  width:calc(100% - 10%);
+  
+}
+
+
+
+.container__title {
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+.container__text {
+width: 425px;
+margin-top: 30px;
+margin-left: 100px;
+}
+
+.container__text p {
+  font-family: "45 Light";
+font-style: normal;
+font-weight: 350;
+font-size: 20px;
+line-height: 24px;
+text-align: justify;
+color: #F0F0F0;
+
+}
+
+.text__click {
+  margin-top: 3rem;
+}
+
+.text__click {
+  visibility:hidden;
+ animation: showSvgTitles;
+ transition: ease-out;
+ animation-delay: 2.5s;
+ transition: 0.5s;
+ animation-duration: 20000000s;
+}
+
+@keyframes showSvgTitles {
+ 0% {
+   visibility: hidden;
+   opacity: 1;
+ }
+ 25% {
+  opacity: 0.75;
+ }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+
+ 100% {
+   visibility: visible;
+   opacity: 0;
+ }
+}
+
+.button__servicio {
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 111px;
+  height: 40px;
+  border-radius: 20px;
+  background: #31304C;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.button__servicio small:hover {
+  color: rgb(3, 159, 3);
+  transition: 0.2s;
+}
+
+
+.button__servicio small {
+  font-family: "65 Medium";
+  color: #D9D9D9;
+  font-style: normal;
+  font-size: 17px;
+}
+
+
+.servicios__title {
+
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;  
+  color: #F0F0F0;
+  
+  } 
+
+  /* CSS for Container Intervención Online */
+
+  .container__intervencionOnline {
+
+   display: flex;
+    width: 425px;
+    margin-right: 12%;
+
+  }
+  .green_figure {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    margin-top: 0.25%;
+  
+  }
+
+  .servicioDisponible__text {
+    margin-top: 50px;
+    text-align: center !important;
+    font-family: "45 Book" !important;
+    font-size: 16.5px !important;
+  }
+
+  .intervencionOnline__text {
+    font-family: "45 Book" !important;
+    margin-left: 8%;
+    
+  }
+
+ 
+
+  /* ----------------------------------------------------------- */
+
+  /* CSS for Container Others Online */
+  .container__othersOnline {
+    display: flex;
+   
+   }
+
+   .othersOnline__text {
+    font-family: "45 Book" !important;
+    height:130px ;
+  }
+
+  .servicioNoDisponible__text {
+    margin-top: 40px;
+    text-align: center !important;
+    font-family: "45 Book" !important;
+    font-size: 16.5px !important;
+  }
+
+  .othersOnline__text {
+    margin-left: 8%;
+  }   
+  .text__click {
+    display:none;
+  }
+
+  /* ----------------------------------------------------------- */
+
+    /* CSS for container Plugin */
+    .container__plugin {
+      position: relative;
+      display: none;
+      width: 644px;
+      flex-direction: column;
+      margin-left: auto !important;
+      margin-right: auto;
+      align-items: center;
+      margin-top: 100px;
+      margin-left: 100px;
+    }
+  
+    .container__plugin__text {
+      font-style: normal;
+      font-weight: 350;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: justify;
+      font-family: "45 Book";
+      color: #F0F0F0;
+  
+    }
+  
+    .container__plugin__contacto {
+      font-style: normal;
+      font-weight: 350;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: justify;
+      font-family: "45 Book";
+      color: #FFFFFF;
+    }
+
+    .container__plugin__video {
+      margin-top: 72px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+ .container__plugin__video iframe {
+      width:560px;
+      height:315px;
+  } 
+
+    .container__plugin__contacto__icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+  
+/* ---------------------------------------- CSS for Firulete 1 --------------------------------- */
+
+.container__firulete {
+  width: 400px;
+  height: 400px;
+  margin-left: 190px;
+  margin-right: auto;
+}
+
+.stick {
+  position: absolute;
+  top: 350px;
+  left: 385px;
+  height: 150px;
+}
+
+.svg__firulete {
+  cursor: pointer;
+}
+
+.svg__firulete path:hover {
+background: #D9D9D9;
+opacity: 0.8;
+
+}
+
+.digitalizacion {
+  fill:#D9D9D9;
+  stroke:#010023; 
+  background-color: #D9D9D9;
+  animation: light 1s 0.2s;
+  opacity: 0.2;
+  cursor: pointer;
+}
+.digitalizacion:hover {
+  fill:#D9D9D9;
+  opacity: 0.8;
+}
+.digitalizacion__title {
+ 
+  fill:white;
+  font-size: 18px;
+  font-family: "45 Book";
+  cursor: pointer;
+  
+}
+
+.text__test {
+  fill:white;
+  font-size: 19px;
+  font-family: "45 Book";
+  cursor: pointer;
+}
+
+
+
+.intervencion {
+  fill:#D9D9D9;
+  stroke:#010023; 
+  background-color: #D9D9D9;
+  animation: light 1s 0.3s;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.intervencion:hover {
+  fill:#D9D9D9;
+  opacity: 0.8;
+}
+
+.intervencion__title {
+ 
+  fill:white;
+  font-size: 18px;
+  font-family: "45 Book";
+  cursor: pointer;
+}
+
+.analisis {
+  fill:#D9D9D9;
+  stroke:#010023; 
+  background-color: #D9D9D9;
+  animation: light 1s 0.4s;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.analisis:hover {
+  fill:#D9D9D9;
+  opacity: 0.8;
+}
+
+.analisis__title {
+ 
+  fill:white;
+  font-size: 18px;
+  font-family: "45 Book";
+  cursor: pointer;
+ /*  transform: translate(-100px,-100px); */
+}
+
+.reduccion {
+  fill:#D9D9D9;
+  stroke:#010023; 
+  background-color: #D9D9D9;
+  animation: light 1s 0.5s;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.reduccion:hover {
+  fill:#D9D9D9;
+  opacity: 0.8;
+}
+
+.reduccion__title {
+ 
+  fill:white;
+  font-size: 18px;
+  font-family: "45 Book";
+  cursor: pointer;
+}
+
+.reutilizacion {
+  fill:#D9D9D9;
+  stroke:#010023; 
+  background-color: #D9D9D9;
+  animation: light 1s 0.6s;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.reutilizacion:hover {
+  fill:#D9D9D9;
+  opacity: 0.8;
+}
+
+.reutilizacion__title {
+ 
+  fill:white;
+  font-size: 18px;
+  font-family: "45 Book";
+  cursor: pointer;
+}
+
+/* SVG titles small ----------------------------------------------------------  */
+.reutilizacion__small__title {
+  position: absolute;
+  fill:white;
+  font-size: 11px;
+  font-family: "45 Book";
+  cursor: pointer;
+  transform: translateX(-343px)translateY(145px);
+}
+.intervencion__small__title {
+  position: absolute;
+  fill:white;
+  font-size: 11px;
+  font-family: "45 Book";
+  cursor: pointer;
+  transform: translateX(-90px)translateY(145px);
+}
+.analisis__small__title {
+  position: absolute;
+  fill:white;
+  font-size: 11px;
+  font-family: "45 Book";
+  cursor: pointer;
+  transform: translateX(-140px)translateY(285px);
+}
+.reduccion__small__title {
+  position: absolute;
+  fill:white;
+  font-size: 11px;
+  font-family: "45 Book";
+  cursor: pointer;
+  transform: translateX(-270px)translateY(285px);
+}
+.digitalizacion__small__title {
+  position: absolute;
+  fill:white;
+  font-size: 11px;
+  font-family: "45 Book";
+  cursor: pointer;
+  transform: translateX(-220px)translateY(55px);
+}
+
+.svg__titles {
+   visibility:hidden;
+  animation: showSvgTitles;
+  animation-delay: 0.8s;
+  animation-duration: 20000000s;
+
+}
+
+@keyframes showSvgTitles {
+  0% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes light {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+/* CSS for Span Scroll Here */
+.span__scrollHere {
+  height: 50px;
+
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+  /* Media Query for Mobile */
+@media only screen and (max-width:767px){
+
+
+      /* CSS for Firulete 1 */
+
+.container__firulete {
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .container__servicios {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  
+  .stick {
+    position: absolute;
+    top: 56%;
+    left: 49.4%;
+    height: 85px;
+  }
+
+  .container__servicio {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    margin-top: 1px;
+  }
+
+  .servicios__title {
+
+    font-family: "65 Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center; 
+    color: #F0F0F0;
+    
+    }
+
+    .container__text {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;  
+      
+     }
+
+    .container__text p {
+      font-family: "45 Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    color: #F0F0F0;
+    height: 100px;
+    
+    }
+
+    .container__intervencionOnline {
+      width: 100%;
+    }
+
+ 
+
+    .servicioDisponible__text {
+      margin-top: 2px;
+      font-size: 15px !important;
+      height: 20px !important;
+ 
+    }
+
+    .container__othersOnline {
+      width: 100%;
+    }
+    .othersOnline__text {
+      height: 80px !important;
+    }
+
+    .othersOnline__text {
+      margin-left: 0;
+    }  
+    .intervencionOnline__text{
+      margin-left: 0;
+    }
+
+    .button__servicio {
+     margin-top: 20px;
+     height: 35px;
+     width: 90px;
+     margin-bottom: 1px;
+    }
+
+    .button__servicio small {
+      font-size: 15px;
+    }
+    .servicioNoDisponible__text {
+      margin-top: 22px;
+      height: 40px !important;
+      font-size: 15px !important;
+    }
+
+.text__click {
+  display:none;
+}
+
+.button__servicio__modal {
+  visibility: visible;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  width: 104px;
+  height: 38px;
+  font-size: 15px;
+  background-color: #31304C;
+}
+
+.button__servicio__modal small {
+  font-family: "45 Book";
+  font-size: 15px;
+  color: #F0F0F0;
+}
+
+.container__plugin {
+  width: 90%;
+}
+
+.container__plugin__text {
+  font-style: normal;
+font-weight: 350;
+font-size: 15px;
+line-height: 24px;
+text-align: justify;
+width: 335px;
+height: 242px;
+}
+
+.container__plugin__video iframe {
+  width: 320px;
+  height: 197px;
+}
+
+.container__plugin__contacto {
+  font-style: normal;
+font-weight: 350;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+}
+
+.green_figure {
+  display: none;
+}
+
+.span__scrollHere {
+  height: 30px;
+
+}
+
+/* --------------------------- Css for svg titles small */
+.reutilizacion__small__title {
+  font-size: 8px;
+  transform: translateX(-243px)translateY(100px);
+}
+.intervencion__small__title {
+  font-size: 8px;
+  transform: translateX(-65px)translateY(100px);
+}
+.analisis__small__title {
+
+  font-size: 8px; 
+  transform: translateX(-100px)translateY(205px);
+}
+.reduccion__small__title {
+  font-size: 8px;
+  transform: translateX(-190px)translateY(205px);
+}
+.digitalizacion__small__title {
+  font-size: 8px;
+  transform: translateX(-155px)translateY(40px);
+}
+
+
+}
+
+
+
+/* ------------------------ End queries for Mobile ---------------------------------- */ 
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+  .container__servicios {
+    margin-top: 60px;
+    align-items: center;
+    margin-bottom: 220px;
+   
+  }
+  .servicios__title {
+
+    font-family: "65 Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center; 
+    color: #F0F0F0;
+    
+    }
+
+    .stick {
+      position: absolute;
+      top: 625px;
+      left: 49.5%;
+      height: 101px;
+    }
+
+     /* CSS for Container Intervención Online */
+
+  .container__intervencionOnline {
+    display: flex;
+     width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+   }
+
+   .container__othersOnline {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+   margin-right: auto;
+   }
+
+   .othersOnline__text {
+    margin-left: 0;
+  }  
+  .intervencionOnline__text{
+    margin-left: 0;
+  }
+
+   .servicioNoDisponible__text {
+    margin-top: 1px;
+    text-align: center !important;
+   }
+
+   .servicioDisponible__text {
+    margin-top: 30px;
+
+   }
+
+    .container__servicio {
+      display: flex;
+      flex-direction:column-reverse;
+      align-items: center;
+      margin-top: 1px;
+      width: 72%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container__text {
+      width:100%;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
+     }
+
+    .container__text p {
+      width: 100%;
+    }
+
+    .button__servicio {
+      margin-top: 30px; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+      /* CSS for Firulete 1 */
+    .container__firulete {
+      width: 400px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+
+    .text__click {
+      margin-top: 30px;
+      text-align: center !important;
+    
+    }
+
+    .container__plugin {
+      margin-top: 220px;
+    }
+
+    .green_figure {
+      display: none;
+    }
+
+    .span__scrollHere {
+      height: 30px;
+    
+    }
+
+    /* --------------------------- Css for svg titles small */
+.reutilizacion__small__title {
+  font-size: 11px;
+  transform: translateX(-383px)translateY(160px);
+}
+.intervencion__small__title {
+  font-size: 11px;
+  transform: translateX(-100px)translateY(160px);
+}
+.analisis__small__title {
+
+  font-size: 11px; 
+  transform: translateX(-150px)translateY(325px);
+}
+.reduccion__small__title {
+  font-size: 11px;
+  transform: translateX(-290px)translateY(325px);
+}
+.digitalizacion__small__title {
+  font-size: 11px;
+  transform: translateX(-240px)translateY(60px);
+}
+
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Media Query for basic laptops  */
+@media only screen and (min-width: 1024px) and (max-width:1300px) {
+  .svg__firulete {
+    width: 350px;
+    height: 350px;
+  }
+
+  .stick {
+    position: absolute;
+    top: 355px;
+    left: 362px;
+    height: 101px;
+  }
+
+  .servicioDisponible__text {
+    margin-top: 50px;
+    text-align: center !important;
+    font-family: "45 Book" !important;
+    font-size: 16.5px !important;
+  }
+
+  .button__servicio {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* CSS for Desktop with large screen */
+ @media only screen and (min-width:1301px) {
+  .container__plugin {
+   
+    margin-top: 2%;
+
+  }
+  .container__servicios{
+    margin-bottom: 250px;
+  }
+
+
+  .button__servicio {
+    margin-top: 30px;
+  }
+
+  .container__plugin {
+    margin-top: 250px;
+  }
+
+   /* --------------------------- Css for svg titles small */
+.reutilizacion__small__title {
+  font-size: 11px;
+  transform: translateX(-383px)translateY(160px);
+}
+.intervencion__small__title {
+  font-size: 11px;
+  transform: translateX(-100px)translateY(160px);
+}
+.analisis__small__title {
+
+  font-size: 11px; 
+  transform: translateX(-150px)translateY(325px);
+}
+.reduccion__small__title {
+  font-size: 11px;
+  transform: translateX(-290px)translateY(325px);
+}
+.digitalizacion__small__title {
+  font-size: 11px;
+  transform: translateX(-240px)translateY(60px);
+}
+
+} 
+

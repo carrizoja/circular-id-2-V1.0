@@ -1,0 +1,46 @@
+/* Importting Helvetica Neue Family Font */
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+/* Css Global settings */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+border: 0;
+outline: 0;
+list-style: none;
+text-decoration: none;
+}
+
+/* Roots variables */
+:root{
+--primary-color: #010023;
+--secondary-color: #94A8D6;
+--accent-color: #459E2E;
+--white: #F0F0F0;
+/* definition of each container size*/
+--container-width-lg: 75%;
+--container-width-md: 86%;
+--container-width-sm: 90%;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+small,
+h1,
+h2,
+p,
+a
+{
+  color: var(--white);
+}
+
+

@@ -1,0 +1,225 @@
+/* Css for Footer */
+
+footer {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--color-secondary)0%,
+  var(--color-secondary-variant)90%);
+  padding: 1rem 0;  
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 8rem;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* -------- Css for figure ------------- */
+.figure {
+  background-color: white;
+  border: 1px solid white;
+  height: 0.5px;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.figure2 {
+  display: none;
+}
+
+/* ----------------- CSS for Grid container ------------------------------------- */
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 1rem; */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.social-icon-wrapper {
+  background-color: var(--color-bg);
+  color: white;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer__logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.permalinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-content: center;
+}
+
+.permalinks a {
+  text-align: right;
+}
+
+.footer__link:hover {
+  color: #6abd45;
+}
+
+.container__contactData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.container__socialIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__socials a {
+  color: var(--white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.footer__socials small {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: medium;
+}
+
+.footer__icon {
+  font-size: 1.7rem;
+}
+
+.footer__socials a:hover {
+  color: #6abd45;
+}
+
+.permalinks {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+.permalinks a {
+  font-family: "65 Medium";
+}
+
+.container__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* ------------------- End Css for Grid ------------------------------------ */
+
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  font-family: "ConfortaRegular";
+}
+
+
+/* Media Queries for Mobile Devices */
+
+@media screen and (max-width: 768px) {
+  /*center permalinks */
+  .permalinks {
+      gap: 1rem;
+      margin-right: 20px;
+  }
+  .footer__socials {
+      margin-bottom: 2.6rem;
+  }
+
+  .footer__logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .container__grid {
+    width: auto;
+  }
+
+  .container__contactData {
+    gap: 10px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container__contactData small {
+    font-size: 10px;
+  }
+
+  .footer__icon {
+    font-size: 1rem;
+  }
+
+  .permalinks a {
+    font-size: 8px;
+  }
+
+  .container__grid {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 130px;
+  }
+
+  /* -------- Css for figure ------------- */
+footer {
+  margin-top: 8rem;
+}
+
+.figure {
+display: none;
+}
+
+.figure2 {
+  background-color: white;
+  border: 1px solid white;
+  display: block;
+  height: 0.5px;
+  width: 135px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.footer__copyright {
+  margin-bottom: 1rem;
+  color: var(--color-white);
+  font-family: "45 Light";
+}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px){
+ 
+  .container__grid {
+    width: 95%;
+  }
+}

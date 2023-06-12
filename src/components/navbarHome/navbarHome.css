@@ -1,0 +1,275 @@
+/* Css for Home's Navbar  */
+
+.container__navbar__home {
+  height: 100vh;
+}
+
+.container__vector {
+  margin-bottom: 200px;
+}
+
+nav {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  bottom:0;
+  width: 200px;
+ height: 500px;
+  z-index: 100;
+  box-shadow: 21px 2px 48px -1px rgba(0, 0, 0,0.09);
+  
+}
+
+.inner-nav {
+  position: absolute;
+  top: 3rem;
+  bottom: 0; 
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 1%;
+  /* set background shadow */
+  box-shadow: 21px 2px 48px -1px rgba(0, 0, 0,0.09);
+
+}
+
+button.toggleHome {
+
+  background-color: var(--primary-color);
+  color: #F0F0F0;
+  z-index: 101;
+  position: fixed;
+  outline: 0;
+  border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  top: 8rem;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+
+nav .inner-nav ul {
+  padding: 0;
+  position: relative;
+  top: 100px;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0,0.2);
+
+}
+
+nav .inner-nav ul li {
+  list-style: none;
+  cursor: pointer;
+  line-height: 3;
+  padding: 0 25px;
+  border-bottom: 1px solid rgba(0, 0, 0,0.2);
+  text-align: end;
+}
+
+nav .inner-nav li a {
+  font-size: 25px;
+  color: #F0F0F0;
+  text-decoration: none;
+ /*  transition: 1s all ease-in-out; */
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+nav .inner-nav li a:hover {
+  color: #459E2E;
+}
+
+/* Css for vectors */
+
+
+.vectorGreen {
+position: relative;
+  width: 500px;
+  height: 500px;
+  bottom: 100px;
+}
+.vectorPurple {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  bottom: 100px;
+  display: none; 
+}
+
+.vectorComponent {
+  fill:none;stroke:#94a8d6
+}
+
+.vector:hover {
+  fill:none;
+stroke:var(--accent-color);
+}
+
+.vectorComponent:hover {
+fill:none;
+stroke:var(--accent-color);
+
+}
+/* CSS for laptops devicews */
+@media only screen and (min-width: 1024px) and (max-width:1500px) {
+  nav {
+    top: 40px;
+    margin-top:40px;
+  }
+  .vectorGreen {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vectorPurple {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 768px){
+
+  .vectorGreen {
+    width: 268px;
+    height: 268px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+
+}
+
+.vectorPurple {
+  width: 268px;
+  height: 268px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+
+}
+nav {
+  width: 150px;   
+}
+
+  button.toggleHome {
+    display: block;
+    right: 1px;
+    top: 105px;
+  } 
+
+  nav .inner-nav li a {
+    font-size: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    
+  }
+
+
+nav {
+  width: 200px;
+  height: 400px;
+}
+
+
+
+nav .inner-nav ul li {
+  text-align:right;
+  width: 200px;
+}
+
+.container__vector {
+  margin-top: 250px;
+}
+
+}
+
+/* Media Query for Tablet */
+
+@media only screen and (min-width: 767px) and (max-width: 1023px){
+
+  .container__vector {
+    margin-bottom: 370px;
+  }
+  .vectorGreen {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   /*  margin-top: 130px; */
+    margin-top: 21%;
+
+}
+
+.vectorPurple {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+
+}
+
+button.toggleHome {
+  display: block;
+  right: 2%;
+  top: 165px;
+} 
+
+nav .inner-nav li a {
+  font-size: 24px;
+
+}
+
+.inner-nav {
+height: 85vh;
+
+}
+
+
+
+}
+
+/* Media Query for some notebooks */
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px){
+  .inner-nav {
+    height: 350px;
+    
+  }
+
+  nav .inner-nav ul {
+  
+    top: 50px;
+  
+  }
+
+  .vectorGreen {
+    width: 420px;
+    height: 420px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   /*  margin-top: 100px; */
+
+}
+
+.vectorPurple {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+ /*  margin-top: 100px; */
+
+}
+
+}

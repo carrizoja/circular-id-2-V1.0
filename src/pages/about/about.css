@@ -1,0 +1,132 @@
+/* CSS for custom font */
+@font-face {
+  font-family: "45 Light";
+  src: url("../../assets/fonts/HelveticaNeueLTStd45Light.otf");
+}
+
+@font-face {
+  font-family: "65 Medium";
+  src: url("../../assets/fonts/helveticaMedium/HelveticaNeue-Medium\ .otf");
+}
+
+/* CSS for about page */
+.container__about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 80vh;
+  }
+
+.about__title {
+
+font-family: 'Helvetica Neue';
+font-style: 'Normal';
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+text-align: right;
+
+color: #F0F0F0;
+
+} 
+
+/* Css for About's text */
+
+.container__text__about {
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+width: 644px;
+}
+
+.about__text  {
+  font-family: "45 Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+text-align: justify; 
+  color: #F0F0F0;
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 767px) {
+
+  .container__about {
+    margin-top: 40px;
+  }
+  .container__title {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .about__title {
+
+    font-family: "65 Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    
+    color: #F0F0F0;
+    
+    }
+
+  .container__text__about {
+    width: 90%;
+  }
+
+  .about__text  {
+    font-family: "45 Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align:justify;
+    color: #F0F0F0;
+  }
+}
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+  .container__about {
+    margin-top: 60px;
+  }
+  .container__title {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .about__title {
+
+    font-family: "65 Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: right;
+    
+    color: #F0F0F0;
+    
+    }
+
+    .about__text  {
+      font-family: "45 Light";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      text-align:justify;
+      color: #F0F0F0;
+    }
+
+    .container__text__about {
+      margin-top: 200px;
+      width: 70%;
+      margin-left: 14%;
+      margin-right: auto;
+    }
+
+
+
+} 
