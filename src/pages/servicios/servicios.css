@@ -487,7 +487,7 @@ opacity: 0.8;
   
   .stick {
     position: absolute;
-    top: 63.5%;
+    top:calc(59.5vh);
     left: 49.4%;
     height: 85px;
   }
