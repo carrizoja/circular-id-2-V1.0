@@ -1,5 +1,5 @@
 
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
@@ -14,15 +14,6 @@ function Servicios() {
 
   const inputRef = useRef();
 
-
-  useEffect(() => {
-    /* obtain coordinates from id or class = digitalizacion__coordinates */
-
-    const x = inputRef.current.offsetLeft;
-    const y = inputRef.current.offsetTop;
-
-    console.log(x, y);
-  }, []);
 
 
   /* svg__circle rotation */
@@ -46,102 +37,50 @@ function Servicios() {
           {/* set .button__servicio visibility to visible */}
           {`.button__servicio {
           visibility: visible;
+          display:block;
         } 
+          .container__plugin {
+            display: flex;
+          }
         .text__click {
           display:none;
         }
-        .svg__firulete {
-          transform: rotate(-72deg);
+        /* rotate stick 90 degrees */
+        .stick {
+          transform: rotate(90deg);
           transition-duration: 1.5s;
         }
-        .svg__titles {
-          transition-duration: 1.5s;
+        .intervencion {
+          opacity: 1
         }
-        .reutilizacion__small__title {
-          transform: translateX(-281px)translateY(285px);
-         
-        }
-    
-        .digitalizacion__small__title {
-          transform: translateX(-345px)translateY(145px);
-        }
-
-        .reduccion__small__title { 
-          transform: translateX(-148px)translateY(285px);
-        }
-
-        .analisis__small__title {
-          transform: translateX(-75px)translateY(148px); 
-        }
-
         .intervencion__small__title {
-          transform: translateX(-215px)translateY(50px);   
+          color: #2c2b47;
         }
+
+        
 
         @media only screen and (max-width:767px){
           .stick {
-            top: 67.5%;      
+            
+            animation: move-and-rotate 1.5s;
+            top:67%;
           }
-          .reutilizacion__small__title {
-            transform: translateX(-200px)translateY(205px);
-          }
-          .digitalizacion__small__title {
-            transform: translateX(-245px)translateY(100px);
-          }
-          .reduccion__small__title {
-            transform: translateX(-100px)translateY(205px);
-          }
-          .analisis__small__title {
-                  transform: translateX(-55px)translateY(100px);
-          }
-           .intervencion__small__title {
-              transform: translateX(-155px)translateY(40px);
-             }                    
-        }
 
-        /* Media Query for Tablet */
-        @media only screen and (min-width: 768px) and (max-width:1023px) {
-          .intervencion__small__title {
-            transform: translateX(-240px)translateY(55px);
+         
+
+          @keyframes move-and-rotate {
+            0% {
+              top: 67%;
+              transform: rotate(0deg);
             }
-          .analisis__small__title {
-            transform: translateX(-75px)translateY(168px);
+            100% {
+              top: 67%;
+              transform: rotate(90deg);
             }
-          .digitalizacion__small__title {
-              transform: translateX(-385px)translateY(168px);
-            }
-          .reduccion__small__title {
-              transform: translateX(-155px)translateY(325px);
-            }
-          .reutilizacion__small__title {
-              transform: translateX(-300px)translateY(325px);
-            }
+          }  
 
         }
-        /* CSS for Desktop with large screen */
-        @media only screen and (min-width:1301px) {
-          .reutilizacion__small__title {
-            font-size: 11px;
-            transform: translateX(-310px)translateY(325px);
-          }
-          .intervencion__small__title {
-            font-size: 11px;
-            transform: translateX(-240px)translateY(60px);
-          }
-          .analisis__small__title {
-          
-            font-size: 11px; 
-            transform: translateX(-80px)translateY(165px);
-          }
-          .reduccion__small__title {
-            font-size: 11px;
-            transform: translateX(-160px)translateY(325px);
-          }
-          .digitalizacion__small__title {
-            font-size: 11px;
-            transform: translateX(-385px)translateY(165px);
-          }
-        }
+       
       
 
         
@@ -165,95 +104,41 @@ function Servicios() {
       <>
         <style>
           {`
-        .svg__firulete {
-          transform: rotate(-288deg);
-          transition-duration: 1.5s;
-        }
-        .svg__titles {
-          transition-duration: 1.5s;
-        }
-
-        .reutilizacion__small__title {
-          transform: translateX(-215px)translateY(50px);
-         
-        }
-    
-        .digitalizacion__small__title {
-          transform: translateX(-90px)translateY(148px);
-        }
-
-        .reduccion__small__title { 
-          transform: translateX(-335px)translateY(150px);
-        }
-
-        .analisis__small__title {
-          transform: translateX(-260px)translateY(285px); 
-        }
-
-        .intervencion__small__title {
-          transform: translateX(-155px)translateY(285px);   
-        }
-
-        @media only screen and (max-width:767px){
-          .stick {
-            top: 60%;      
-          }
-
-          .reutilizacion__small__title {
-            transform: translateX(-155px)translateY(40px);
-          }
-          .digitalizacion__small__title {
-            transform: translateX(-67px)translateY(100px);
-          }
-          .reduccion__small__title {
-            transform: translateX(-240px)translateY(100px);
-          }
-          .analisis__small__title {
-            transform: translateX(-180px)translateY(205px);
-          }
-          .intervencion__small__title {
-            transform: translateX(-110px)translateY(205px);
-          }
-        }
-
-        /* Media Query for Tablet */
-        @media only screen and (min-width: 768px) and (max-width:1023px) {
-          .intervencion__small__title {
-            transform: translateX(-170px)translateY(325px);
+            /* rotate stick 90 degrees */
+            .stick {
+              transform: rotate(-90deg);
+              transition-duration: 1.5s;
             }
-          .analisis__small__title {
-            transform: translateX(-285px)translateY(325px);
+            .reutilizacion {
+              opacity: 1
             }
-          .digitalizacion__small__title {
-              transform: translateX(-100px)translateY(165px);
-            }
-          .reduccion__small__title {
-              transform: translateX(-375px)translateY(165px);
-            }
-          .reutilizacion__small__title {
-              transform: translateX(-240px)translateY(60px);
+            .reutilizacion__small__title {
+              color: #2c2b47;
             }
 
-        }
-
-        /* CSS for Desktop with large screen */
-        @media only screen and (min-width:1301px) {
-          .reutilizacion__small__title {
-            transform: translateX(-235px)translateY(60px);
-          }
-          .intervencion__small__title {
-            transform: translateX(-160px)translateY(325px);
-          }
-          .analisis__small__title {
-            transform: translateX(-285px)translateY(325px);
-          }
-          .reduccion__small__title {
-            transform: translateX(-375px)translateY(165px);
-          }
-          .digitalizacion__small__title {
-            transform: translateX(-95px)translateY(165px);
-          }
-        }
+            @media only screen and (max-width:767px){
+              .stick {
+                top: 70%;
+                animation: move-and-rotate 1.5s;
+              }
+                     
+  
+           
+  
+            @keyframes move-and-rotate {
+              0% {
+                top: 70%;
+                transform: rotate(0deg);
+              }
+              100% {
+                top: 70%;
+                transform: rotate(-90deg);
+              }
+            }  
+            
+              
+          
+            }
 
         `}
         </style>
@@ -273,96 +158,42 @@ function Servicios() {
       <>
         <style>
           {`
-        .svg__firulete {
-          transform: rotate(-216deg);
-          transition-duration: 1.5s;
-        }
-        .svg__titles {
-          transition-duration: 1.5s;
-        }
-
-        .reutilizacion__small__title {
-          transform: translateX(-88px)translateY(148px);
-         
-        }
-    
-        .digitalizacion__small__title {
-          transform: translateX(-160px)translateY(285px);
-        }
-
-        .reduccion__small__title { 
-          transform: translateX(-205px)translateY(50px);
-        }
-
-        .analisis__small__title {
-          transform: translateX(-325px)translateY(150px); 
-        }
-
-        .intervencion__small__title {
-          transform: translateX(-280px)translateY(285px);   
-        }
-     
-
-        @media only screen and (max-width:767px){
+          /* rotate stick -145 degrees */
           .stick {
-            top: 60%;      
+            transform: rotate(-145deg);
+            transition-duration: 1.5s;
           }
-
-          .reutilizacion__small__title {
-            transform: translateX(-65px)translateY(100px);
-          }
-          .digitalizacion__small__title {
-            transform: translateX(-110px)translateY(205px);
+          .reduccion {
+            opacity: 1
           }
           .reduccion__small__title {
-            transform: translateX(-150px)translateY(40px);
+            color: #2c2b47;
           }
-          .analisis__small__title {
-            transform: translateX(-235px)translateY(100px);
-          }
-          .intervencion__small__title {
-            transform: translateX(-200px)translateY(205px);
-          }
-        }
 
-        /* Media Query for Tablet */
-        @media only screen and (min-width: 768px) and (max-width:1023px) {
-          .intervencion__small__title {
-            transform: translateX(-310px)translateY(325px);
-            }
-          .analisis__small__title {
-            transform: translateX(-365px)translateY(165px);
-            }
-          .digitalizacion__small__title {
-              transform: translateX(-170px)translateY(325px);
-            }
-          .reduccion__small__title {
-              transform: translateX(-230px)translateY(60px);
-            }
-          .reutilizacion__small__title {
-              transform: translateX(-95px)translateY(165px);
+          @media only screen and (max-width:767px){
+            .stick {
+              top: 70%;
+              animation: move-and-rotate 1.5s;
             }
 
-        }
 
-        /* CSS for Desktop with large screen */
-        @media only screen and (min-width:1301px) {
-          .reutilizacion__small__title {
-            transform: translateX(-95px)translateY(165px);
+            
+   
+                 
+
+       
+
+        @keyframes move-and-rotate {
+          0% {
+            top: 70%;
+            transform: rotate(0deg);
           }
-          .intervencion__small__title {
-            transform: translateX(-315px)translateY(325px);
+          100% {
+            top: 70%;
+            transform: rotate(-145deg);
           }
-          .analisis__small__title {
-            transform: translateX(-370px)translateY(165px);
+        }  
           }
-          .reduccion__small__title {
-            transform: translateX(-230px)translateY(60px);
-          }
-          .digitalizacion__small__title {
-            transform: translateX(-170px)translateY(325px);
-          }
-        }
 
 
         `}
@@ -383,96 +214,36 @@ function Servicios() {
       <>
         <style>
           {`
-        .svg__firulete {
-          transform: rotate(-144deg);
-          transition-duration: 1.5s;
-        }
-        .svg__titles {
-          transition-duration: 1.5s;
+       
+       /* rotate stick 145 degrees */
+       .stick {
+         transform: rotate(145deg);
+         transition-duration: 1.5s;
+       }
+       .analisis {
+         opacity: 1
+       }
+       .analisis__small__title {
+         color: #2c2b47;
+       }
+
+       @media only screen and (max-width:767px){
+        .stick {
+          top: 70%;
+          animation: move-and-rotate 1.5s;
         }
 
-        .reutilizacion__small__title {
-          transform: translateX(-155px)translateY(285px);
-         
-        }
-    
-        .digitalizacion__small__title {
-          transform: translateX(-280px)translateY(285px);
-        }
-
-        .reduccion__small__title { 
-          transform: translateX(-80px)translateY(155px);
-        }
-
-        .analisis__small__title {
-          transform: translateX(-200px)translateY(50px); 
-        }
-
-        .intervencion__small__title {
-          transform: translateX(-343px)translateY(155px);  
-        }
-   
-
-        @media only screen and (max-width:767px){
-          .stick {
-            top: 61%;      
+        @keyframes move-and-rotate {
+          0% {
+            top: 70%;
+            transform: rotate(0deg);
           }
-
-          .reutilizacion__small__title {
-            transform: translateX(-110px)translateY(205px);
+          100% {
+            top: 70%;
+            transform: rotate(-145deg);
           }
-          .digitalizacion__small__title {
-            transform: translateX(-200px)translateY(205px);
-          }
-          .reduccion__small__title {
-            transform: translateX(-60px)translateY(100px);
-          }
-          .analisis__small__title {
-            transform: translateX(-145px)translateY(40px);
-          }
-          .intervencion__small__title {
-            transform: translateX(-243px)translateY(100px);
-          }
-        }
-
-        /* Media Query for Tablet */
-        @media only screen and (min-width: 768px) and (max-width:1023px) {
-          .intervencion__small__title {
-            transform: translateX(-90px)translateY(165px);
-            }
-          .analisis__small__title {
-            transform: translateX(-225px)translateY(56px);
-            }
-          .digitalizacion__small__title {
-            transform: translateX(-160px)translateY(320px);
-            }
-          .reduccion__small__title {
-              transform: translateX(-90px)translateY(165px);
-            }
-          .reutilizacion__small__title {
-            transform: translateX(-90px)translateY(165px);
-            }
-
-        }
-
-        /* CSS for Desktop with large screen */
-        @media only screen and (min-width:1301px) {
-          .reutilizacion__small__title {
-            transform: translateX(-170px)translateY(325px);
-          }
-          .intervencion__small__title {
-            transform: translateX(-385px)translateY(165px);
-          }
-          .analisis__small__title {
-            transform: translateX(-230px)translateY(60px);
-          }
-          .reduccion__small__title {
-            transform: translateX(-90px)translateY(165px);
-          }
-          .digitalizacion__small__title {
-            transform: translateX(-310px)translateY(325px);
-          }
-        }
+        }  
+      }
 
         `}
         </style>
@@ -491,19 +262,35 @@ function Servicios() {
       <>
         <style>
           {`
-        .svg__firulete {
-          transform: rotate(-360deg);
-          transition-duration: 1.5s;
-        }
-        .svg__titles {
-          transition-duration: 1.5s;
-        }
-
-        @media only screen and (max-width:767px){
+          /* rotate stick 360 degrees */
           .stick {
-            top: 60%;      
+            transform: rotate(360deg);
+            transition-duration: 1.5s;
           }
-        }
+          .digitalizacion {
+            opacity: 1
+          }
+          .digitalizacion__small__title {
+            color: #2c2b47;
+          }
+
+          @media only screen and (max-width:767px){
+            .stick {
+              top: 70%;
+              animation: move-and-rotate 1.5s;
+            }
+
+            @keyframes move-and-rotate {
+              0% {
+                top: 70%;
+                transform: rotate(0deg);
+              }
+              100% {
+                top: 70%;
+                transform: rotate(360deg);
+              }
+            } 
+          }
         `}
         </style>
         <div className='container__othersOnline'>
@@ -579,21 +366,25 @@ function Servicios() {
                 mask="url(#path-5-inside-5_41_3076)"
                 onClick={handleClickReutilizacion}
               ></path>
+        {/*        <path className='stick'
+            fill="#F0F0F0"
+            d="M286 178.333a5.332 5.332 0 005.333-5.333 5.332 5.332 0 00-5.333-5.333 5.332 5.332 0 00-5.333 5.333 5.332 5.332 0 005.333 5.333zM287 396V173h-2v223h2z"
+          ></path> */}
             </motion.svg>
             <small onClick={handleClickReutilizacion} className='reutilizacion__small__title svg__titles'>REUTILIZACIÓN </small>
             <small onClick={handleClickIntervencion} className='intervencion__small__title svg__titles'>INTERVENCIÓN </small>
             <small onClick={handleClickAnalisis} className='analisis__small__title svg__titles'>ANÁLISIS </small>
             <small onClick={handleClickDigitalizacion} className='digitalizacion__small__title svg__titles'>DIGITALIZACIÓN </small>
             <small onClick={handleClickReduccion} className='reduccion__small__title svg__titles'>REDUCCIÓN </small>
-            <img className='stick' src={stick} alt="" />
+            <img className='stick' src={stick} alt="" /> 
           </div>
           <div className='container__text'>
             {text}
             <p className='text__click'>Hacé clic sobre el servicio del que te interese ver más información</p>
-            <button style={isDivEnabled ? { display: "block" } : { display: "none" }} onClick={executeScroll} className='button__servicio'><small>Ver más</small></button>
+            <button /* style={isDivEnabled ? { display: "block" } : { display: "none" }} */ onClick={executeScroll} className='button__servicio'><small>Ver más</small></button>
           </div>
         </div>
-        <div style={isDivEnabled ? { display: "flex", position: "relative" } : { display: "none" }} className='container__plugin'>
+        <div /* style={isDivEnabled ? { display: "flex", position: "relative" } : { display: "flex" }} */ className='container__plugin'>
           <span ref={myRef} className='span__scrollHere'></span>
           <div className='container__plugin__text'>
             <p>La intervención es a través de un plugin que posibilita la combinación de prendas para mejorar la experiencia digital. El usuario podrá probarse el producto de manera virtual optimizando la decisión de compra. La herramienta facilita el armado de looks completos y muestra la versatilidad de cada artículo.</p>
