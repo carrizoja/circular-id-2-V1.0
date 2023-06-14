@@ -76,7 +76,7 @@ function Footer() {
         </div>
         <figure className='figure2'></figure>
         <div className='footer__copyright'>
-          <small>&copy; Circular ID2. All rights reserved 2023 </small>
+          <small>&copy; Circular ID. All rights reserved 2023 </small>
         </div>
 
       </footer>
