@@ -63,18 +63,18 @@ function Servicios() {
           .stick {
             
             animation: move-and-rotate 1.5s;
-            top:calc(62.5vh);
+            top:calc(62vh);
           }
 
          
 
           @keyframes move-and-rotate {
             0% {
-              top:calc(62.5vh);
+              top:calc(62vh);
               transform: rotate(0deg);
             }
             100% {
-              top:calc(62.5vh);
+              top:calc(62vh);
               transform: rotate(90deg);
             }
           }  
@@ -118,7 +118,7 @@ function Servicios() {
 
             @media only screen and (max-width:767px){
               .stick {
-                top:calc(65vh);
+                top:calc(64.5vh);
                 animation: move-and-rotate 1.5s;
               }
                      
@@ -127,11 +127,11 @@ function Servicios() {
   
             @keyframes move-and-rotate {
               0% {
-                top:calc(65vh);
+                top:calc(64.5vh);
                 transform: rotate(0deg);
               }
               100% {
-                top:calc(65vh);
+                top:calc(64.5vh);
                 transform: rotate(-90deg);
               }
             }  
@@ -172,17 +172,17 @@ function Servicios() {
 
           @media only screen and (max-width:767px){
             .stick {
-              top:calc(65vh);
+              top:calc(64.5vh);
               animation: move-and-rotate 1.5s;
             }
 
         @keyframes move-and-rotate {
           0% {
-            top:calc(65vh);
+            top:calc(64.5vh);
             transform: rotate(0deg);
           }
           100% {
-            top:calc(65vh);
+            top:calc(64.5vh);
             transform: rotate(-145deg);
           }
         }  
@@ -222,17 +222,17 @@ function Servicios() {
 
        @media only screen and (max-width:767px){
         .stick {
-          top:calc(65vh);
+          top:calc(64.5vh);
           animation: move-and-rotate 1.5s;
         }
 
         @keyframes move-and-rotate {
           0% {
-            top:calc(65vh);
+            top:calc(64.5vh);
             transform: rotate(0deg);
           }
           100% {
-            top:calc(65vh);
+            top:calc(64.5h);
             transform: rotate(-145deg);
           }
         }  
@@ -269,17 +269,17 @@ function Servicios() {
 
           @media only screen and (max-width:767px){
             .stick {
-              top:calc(65vh);
+              top:calc(64.5vh);
               animation: move-and-rotate 1.5s;
             }
 
             @keyframes move-and-rotate {
               0% {
-                top:calc(65vh);
+                top:calc(64.5vh);
                 transform: rotate(0deg);
               }
               100% {
-                top:calc(65vh);
+                top:calc(64.5vh);
                 transform: rotate(360deg);
               }
             } 
