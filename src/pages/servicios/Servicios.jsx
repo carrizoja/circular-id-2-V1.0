@@ -43,6 +43,7 @@ function Servicios() {
         .text__click {
           display:none;
         }
+      
         /* rotate stick 145 degrees */
         .stick {
           transform: rotate(145deg);
@@ -58,15 +59,19 @@ function Servicios() {
           .stick {
             
             animation: move-and-rotate 1.5s;
-            top:calc(62vh);
+            top:calc(445px);
+          }
+
+          .container__firulete {
+            margin-top: 20px;
           }
           @keyframes move-and-rotate {
             0% {
-              top:calc(62vh);
+              top:calc(445px);
               transform: rotate(0deg);
             }
             100% {
-              top:calc(62vh);
+              top:calc(445px);
               transform: rotate(90deg);
             }
           }  
@@ -111,17 +116,23 @@ function Servicios() {
 
             @media only screen and (max-width:767px){
               .stick {
-                top:calc(64vh);
+                top:calc(445px);
                 animation: move-and-rotate 1.5s;
+              }
+              .container__firulete {
+                margin-top: 15px;
+              }
+              .button__servicio {
+                display:none;
               }
         
             @keyframes move-and-rotate {
               0% {
-                top:calc(64vh);
+                top:calc(445px);
                 transform: rotate(0deg);
               }
               100% {
-                top:calc(64vh);
+                top:calc(445px);
                 transform: rotate(-90deg);
               }
             }  
@@ -157,7 +168,7 @@ function Servicios() {
             transform: rotate(90deg);
             transition-duration: 1.5s;
           }
-          .intervecion {
+          .intervencion {
             opacity: 1
           }
           .intervencion__small__title {
@@ -166,17 +177,24 @@ function Servicios() {
 
           @media only screen and (max-width:767px){
             .stick {
-              top:calc(64vh);
+              top:calc(445px);
               animation: move-and-rotate 1.5s;
+            }
+            .container__firulete {
+              margin-top: 15px;
+            }
+
+            .button__servicio {
+              display:none;
             }
 
         @keyframes move-and-rotate {
           0% {
-            top:calc(64vh);
+            top:calc(445px);
             transform: rotate(0deg);
           }
           100% {
-            top:calc(64vh);
+            top:calc(445px);
             transform: rotate(-145deg);
           }
         }  
@@ -219,17 +237,24 @@ function Servicios() {
 
        @media only screen and (max-width:767px){
         .stick {
-          top:calc(64vh);
+          top:calc(445px);
           animation: move-and-rotate 1.5s;
+        }
+        .container__firulete {
+          margin-top: 15px;
+        }
+
+        .button__servicio {
+          display:none;
         }
 
         @keyframes move-and-rotate {
           0% {
-            top:calc(64vh);
+            top:calc(445px);
             transform: rotate(0deg);
           }
           100% {
-            top:calc(64vh);
+            top:calc(445px);
             transform: rotate(-145deg);
           }
         }  
@@ -290,17 +315,19 @@ function Servicios() {
 
           @media only screen and (max-width:767px){
             .stick {
-              top:calc(64vh);
+              top:calc(445px);
               animation: move-and-rotate 1.5s;
             }
-
+            .container__firulete {
+              margin-top: 20px;
+            }
             @keyframes move-and-rotate {
               0% {
-                top:calc(64vh);
+                top:calc(445px);
                 transform: rotate(0deg);
               }
               100% {
-                top:calc(64vh);
+                top:calc(445px);
                 transform: rotate(360deg);
               }
             } 
@@ -382,10 +409,10 @@ function Servicios() {
               ></path>
             </motion.svg>
             <small onClick={handleClickReutilizacion} className='reutilizacion__small__title svg__titles'>REUTILIZACIÓN </small>
-            <small onClick={handleClickIntervencion} className='intervencion__small__title svg__titles'>ETIQUETADO</small>
-            <small onClick={handleClickAnalisis} className='analisis__small__title svg__titles'>INTERVENCIÓN</small>
+            <small onClick={handleClickEtiquetado} className='intervencion__small__title svg__titles'>ETIQUETADO</small>
+            <small onClick={handleClickIntervencion} className='analisis__small__title svg__titles'>INTERVENCIÓN</small>
             <small onClick={handleClickDigitalizacion} className='digitalizacion__small__title svg__titles'>DIGITALIZACIÓN </small>
-            <small onClick={handleClickEtiquetado} className='reduccion__small__title svg__titles'>ANÁLISIS</small>
+            <small onClick={handleClickAnalisis} className='reduccion__small__title svg__titles'>ANÁLISIS</small>
             <img className='stick' src={stick} alt="" /> 
           </div>
           <div className='container__text'>

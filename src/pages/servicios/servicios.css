@@ -504,7 +504,7 @@
 
   .stick {
     position: absolute;
-    top: 405px;
+    top: 403px;
     left: 49.4%;
     height: 85px;
   }
@@ -513,7 +513,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin-top: 1px;
+    margin-top: 5%;
   }
 
   .servicios__title {
@@ -532,7 +532,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+   /*  margin-bottom: 20px; */
 
   }
 
@@ -549,10 +549,15 @@
   }
 
   .container__intervencionOnline {
-    width: 100%; 
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-
+  .intervencionOnline__text {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   .servicioDisponible__text {
     margin-top: 2px;
@@ -563,17 +568,11 @@
 
   .container__othersOnline {
     width: 100%;
+    height: 120px;  
   }
 
   .othersOnline__text {
     height: 80px !important;
-  }
-
-  .othersOnline__text {
-    margin-left: 0;
-  }
-
-  .intervencionOnline__text {
     margin-left: 0;
   }
 
@@ -595,8 +594,6 @@
   }
 
   .text__click {
-    /*  font-size: 13px !important;
-  margin-top: 5px; */
     display: none;
   }
 
@@ -629,12 +626,27 @@
     line-height: 24px;
     text-align: justify;
     width: 335px;
-    height: 242px;
+    height: 200px;
+  }
+
+  .carzoglio {
+    margin-top: 10px;
+  }
+  .noTag {
+    margin-top: 10px;
   }
 
   .container__plugin__video iframe {
     width: 320px;
     height: 197px;
+  }
+
+  .container__plugin__video {
+    margin-bottom: 30px;
+  }
+
+  .intervencionVideo {
+    margin-top: 10px; 
   }
 
   .container__plugin__contacto {
