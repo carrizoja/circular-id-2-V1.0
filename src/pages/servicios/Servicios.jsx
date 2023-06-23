@@ -253,9 +253,29 @@ function Servicios() {
       <>
         <style>
           {`
-            .text__click {
-              display:none;
-            }
+          .button__servicio {
+            visibility: visible;
+            display:block;
+          } 
+          .container__plugin {
+            display: flex;
+          }
+          .text__click {
+            display:none;
+          }
+          .intervencionVideo {
+            display: none;
+          }
+          .carzoglio {
+            display: block;
+          }
+          .noTag {
+            display: block;
+          }
+          .container__plugin__text {
+            display: none;
+          }
+
           /* rotate stick 360 degrees */
           .stick {
             transform: rotate(360deg);
@@ -287,11 +307,16 @@ function Servicios() {
           }
         `}
         </style>
-        <div className='container__othersOnline'>
+       {/*  <div className='container__othersOnline'>
           <figure className='green_figure'></figure>
           <p className='othersOnline__text'>DIGITALIZACIÓN del proceso productivo, comenzando por la prenda y el etiquetado, para obtener el pasaje del mundo físico al virtual, dando trazabilidad al producto.</p>
         </div>
-        <p className='servicioNoDisponible__text'>Estamos trabajando en el desarrollo de este servicio.</p>
+        <p className='servicioDisponible__text'>Este servicio ya se encuentra disponible.</p> */}
+         <div className='container__intervencionOnline'>
+          <figure className='green_figure'></figure>
+          <p className='intervencionOnline__text'>DIGITALIZACIÓN del proceso productivo, comenzando por la prenda y el etiquetado, para obtener el pasaje del mundo físico al virtual, dando trazabilidad al producto.</p>
+        </div>
+        <p className='servicioDisponible__text'>Este servicio ya se encuentra disponible.</p>
       </>
     );
   }
@@ -389,8 +414,14 @@ function Servicios() {
           <div className='container__plugin__text'>
             <p>La intervención es a través de un plugin que posibilita la combinación de prendas para mejorar la experiencia digital. El usuario podrá probarse el producto de manera virtual optimizando la decisión de compra. La herramienta facilita el armado de looks completos y muestra la versatilidad de cada artículo.</p>
           </div>
-          <div className='container__plugin__video'>
+          <div className='container__plugin__video intervencionVideo'>
             <iframe src="https://www.youtube.com/embed/ZwpPIKgUdYM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
+          <div className='container__plugin__video carzoglio'>
+          <iframe  src="https://www.youtube.com/embed/DAtYk-pZLHw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div className='container__plugin__video noTag'>
+          <iframe src="https://www.youtube.com/embed/F_dfDExPC1I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className='container__plugin__contacto'>
             <p>Si te interesa conocer más acerca de nuestro servicios, por favor contactanos por alguno de los siguientes medios:</p>
