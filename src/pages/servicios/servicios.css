@@ -417,7 +417,7 @@
   font-size: 11px;
   font-family: "45 Book";
   cursor: pointer;
-  transform: translateX(-90px)translateY(145px);
+  transform: translateX(-85px)translateY(145px);
 }
 
 .analisis__small__title {
@@ -426,7 +426,7 @@
   font-size: 11px;
   font-family: "45 Book";
   cursor: pointer;
-  transform: translateX(-140px)translateY(285px);
+  transform: translateX(-150px)translateY(285px);
 }
 
 .reduccion__small__title {
@@ -435,7 +435,7 @@
   font-size: 11px;
   font-family: "45 Book";
   cursor: pointer;
-  transform: translateX(-270px)translateY(285px);
+  transform: translateX(-255px)translateY(285px);
 }
 
 .digitalizacion__small__title {
@@ -504,7 +504,7 @@
 
   .stick {
     position: absolute;
-    top: calc(58.5vh);
+    top: 405px;
     left: 49.4%;
     height: 85px;
   }
@@ -662,18 +662,18 @@
 
   .intervencion__small__title {
     font-size: 8px;
-    transform: translateX(-65px)translateY(100px);
+    transform: translateX(-60px)translateY(100px);
   }
 
   .analisis__small__title {
 
     font-size: 8px;
-    transform: translateX(-100px)translateY(205px);
+    transform: translateX(-110px)translateY(205px);
   }
 
   .reduccion__small__title {
     font-size: 8px;
-    transform: translateX(-190px)translateY(205px);
+    transform: translateX(-175px)translateY(205px);
   }
 
   .digitalizacion__small__title {
@@ -711,7 +711,7 @@
 
   .stick {
     position: absolute;
-    top: 625px;
+    top: 630px;
     left: 49.5%;
     height: 101px;
   }
@@ -754,7 +754,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin-top: 1px;
+    margin-top: 5%;
     width: 72%;
     margin-left: auto;
     margin-right: auto;
@@ -776,6 +776,7 @@
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
   }
 
   /* CSS for Firulete 1 */
@@ -814,18 +815,18 @@
 
   .intervencion__small__title {
     font-size: 11px;
-    transform: translateX(-100px)translateY(160px);
+    transform: translateX(-90px)translateY(160px);
   }
 
   .analisis__small__title {
 
     font-size: 11px;
-    transform: translateX(-150px)translateY(325px);
+    transform: translateX(-170px)translateY(325px);
   }
 
   .reduccion__small__title {
     font-size: 11px;
-    transform: translateX(-290px)translateY(325px);
+    transform: translateX(-285px)translateY(325px);
   }
 
   .digitalizacion__small__title {
@@ -894,13 +895,13 @@
 
   .intervencion__small__title {
     font-size: 11px;
-    transform: translateX(-100px)translateY(160px);
+    transform: translateX(-92px)translateY(160px);
   }
 
   .analisis__small__title {
 
     font-size: 11px;
-    transform: translateX(-150px)translateY(325px);
+    transform: translateX(-170px)translateY(325px);
   }
 
   .reduccion__small__title {

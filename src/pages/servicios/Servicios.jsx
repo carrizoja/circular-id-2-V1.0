@@ -43,15 +43,15 @@ function Servicios() {
         .text__click {
           display:none;
         }
-        /* rotate stick 90 degrees */
+        /* rotate stick 145 degrees */
         .stick {
-          transform: rotate(90deg);
+          transform: rotate(145deg);
           transition-duration: 1.5s;
         }
-        .intervencion {
+        .analisis {
           opacity: 1
         }
-        .intervencion__small__title {
+        .analisis__small__title {
           color: #2c2b47;
         }
         @media only screen and (max-width:767px){
@@ -152,15 +152,15 @@ function Servicios() {
             .text__click {
               display:none;
             }
-          /* rotate stick -145 degrees */
+          /* rotate stick 90 degrees */
           .stick {
-            transform: rotate(-145deg);
+            transform: rotate(90deg);
             transition-duration: 1.5s;
           }
-          .reduccion {
+          .intervecion {
             opacity: 1
           }
-          .reduccion__small__title {
+          .intervencion__small__title {
             color: #2c2b47;
           }
 
@@ -205,15 +205,15 @@ function Servicios() {
             .text__click {
               display:none;
             }  
-       /* rotate stick 145 degrees */
+       /* rotate stick -145 degrees */
        .stick {
-         transform: rotate(145deg);
+         transform: rotate(-145deg);
          transition-duration: 1.5s;
        }
-       .analisis {
+       .reduccion {
          opacity: 1
        }
-       .analisis__small__title {
+       .reduccion__small__title {
          color: #2c2b47;
        }
 
@@ -307,11 +307,6 @@ function Servicios() {
           }
         `}
         </style>
-       {/*  <div className='container__othersOnline'>
-          <figure className='green_figure'></figure>
-          <p className='othersOnline__text'>DIGITALIZACIÓN del proceso productivo, comenzando por la prenda y el etiquetado, para obtener el pasaje del mundo físico al virtual, dando trazabilidad al producto.</p>
-        </div>
-        <p className='servicioDisponible__text'>Este servicio ya se encuentra disponible.</p> */}
          <div className='container__intervencionOnline'>
           <figure className='green_figure'></figure>
           <p className='intervencionOnline__text'>DIGITALIZACIÓN del proceso productivo, comenzando por la prenda y el etiquetado, para obtener el pasaje del mundo físico al virtual, dando trazabilidad al producto.</p>
@@ -345,7 +340,7 @@ function Servicios() {
                 strokeWidth="10"
                 d="M285.5 571A285.498 285.498 0 0113.973 373.724l143.909-46.759a134.186 134.186 0 00127.618 92.72V571z"
                 mask="url(#path-1-inside-1_41_3076)"
-                onClick={handleClickEtiquetado}
+                onClick={handleClickAnalisis}
               >
               </path>
               <mask id="path-2-inside-2_41_3076" fill="#fff">
@@ -355,7 +350,7 @@ function Servicios() {
                 strokeWidth="10"
                 d="M557.027 373.724A285.502 285.502 0 01285.5 571V419.685a134.186 134.186 0 00127.618-92.72l143.909 46.759z"
                 mask="url(#path-2-inside-2_41_3076)"
-                onClick={handleClickAnalisis}
+                onClick={handleClickIntervencion}
               ></path>
               <mask id="path-3-inside-3_41_3076" fill="#fff">
                 <path d="M453.313 54.526a285.505 285.505 0 01103.714 319.198l-143.909-46.759a134.186 134.186 0 00-48.746-150.023l88.941-122.416z"
@@ -365,7 +360,7 @@ function Servicios() {
                 strokeWidth="10"
                 d="M453.313 54.526a285.505 285.505 0 01103.714 319.198l-143.909-46.759a134.186 134.186 0 00-48.746-150.023l88.941-122.416z"
                 mask="url(#path-3-inside-3_41_3076)"
-                onClick={handleClickIntervencion}
+                onClick={handleClickEtiquetado}
               ></motion.path>
               <mask id="path-4-inside-4_41_3076" fill="#fff">
                 <path d="M117.687 54.526a285.5 285.5 0 01335.626 0l-88.941 122.416a134.186 134.186 0 00-157.744 0L117.687 54.526z"></path>
@@ -387,10 +382,10 @@ function Servicios() {
               ></path>
             </motion.svg>
             <small onClick={handleClickReutilizacion} className='reutilizacion__small__title svg__titles'>REUTILIZACIÓN </small>
-            <small onClick={handleClickIntervencion} className='intervencion__small__title svg__titles'>INTERVENCIÓN </small>
-            <small onClick={handleClickAnalisis} className='analisis__small__title svg__titles'>ANÁLISIS </small>
+            <small onClick={handleClickIntervencion} className='intervencion__small__title svg__titles'>ETIQUETADO</small>
+            <small onClick={handleClickAnalisis} className='analisis__small__title svg__titles'>INTERVENCIÓN</small>
             <small onClick={handleClickDigitalizacion} className='digitalizacion__small__title svg__titles'>DIGITALIZACIÓN </small>
-            <small onClick={handleClickEtiquetado} className='reduccion__small__title svg__titles'>ETIQUETADO </small>
+            <small onClick={handleClickEtiquetado} className='reduccion__small__title svg__titles'>ANÁLISIS</small>
             <img className='stick' src={stick} alt="" /> 
           </div>
           <div className='container__text'>
