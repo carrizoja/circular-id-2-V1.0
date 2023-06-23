@@ -22,11 +22,11 @@ function Footer() {
               <small>+54911 40 55 3303</small>
             </div>
             <div className='container__socialIcons'>
-              <motion.a href="#" target='_blank' rel='noreferrer' whileHover={{
+              <motion.a href="mailto:contacto@circularid.com.ar" target='_blank' rel='noreferrer' whileHover={{
                 scale: 1.2,
                 transition: { type: "spring", stiffness: 900, damping: 20 }
               }}><AiOutlineMail className='footer__icon' /></motion.a>
-              <motion.a href="#" target='_blank' rel='noreferrer' whileHover={{
+              <motion.a href="https://api.whatsapp.com/send?phone=5491141768429&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." target='_blank' rel='noreferrer' whileHover={{
                 scale: 1.2,
                 transition: { type: "spring", stiffness: 900, damping: 20 }
               }} ><FaWhatsapp className='footer__icon' /></motion.a>

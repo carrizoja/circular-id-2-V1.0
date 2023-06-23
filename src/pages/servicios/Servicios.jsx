@@ -30,11 +30,9 @@ function Servicios() {
 
   const handleClickIntervencion = () => {
     setIsDivEnabled(!isDivEnabled);
-    /* create a function that rotates the svg__circle */
     setText(
       <>
         <style>
-          {/* set .button__servicio visibility to visible */}
           {`.button__servicio {
           visibility: visible;
           display:block;
@@ -56,18 +54,12 @@ function Servicios() {
         .intervencion__small__title {
           color: #2c2b47;
         }
-
-        
-
         @media only screen and (max-width:767px){
           .stick {
             
             animation: move-and-rotate 1.5s;
             top:calc(62vh);
           }
-
-         
-
           @keyframes move-and-rotate {
             0% {
               top:calc(62vh);
@@ -81,15 +73,13 @@ function Servicios() {
 
         }
        
-      
-
         
         `}
 
         </style>
         <div className='container__intervencionOnline'>
           <figure className='green_figure'></figure>
-          <p className='intervencionOnline__text'>INTERVENCIÓN ONLINE en el sitio web de las marcas para mejorar la experiencia online. El cliente podrá probarse las prendas de forma virtual, optimizando la decisión de compra.</p>
+          <p className='intervencionOnline__text'>INTERVENCIÓN ONLINE en el sitio web de las marcas para mejorar la experiencia digital. El cliente podrá probarse las prendas de forma virtual, optimizando la decisión de compra. </p>
         </div>
         <p className='servicioDisponible__text'>Este servicio ya se encuentra disponible.</p>
 
@@ -104,6 +94,9 @@ function Servicios() {
       <>
         <style>
           {`
+            .text__click {
+              display:none;
+            }
             /* rotate stick 90 degrees */
             .stick {
               transform: rotate(-90deg);
@@ -121,10 +114,7 @@ function Servicios() {
                 top:calc(64vh);
                 animation: move-and-rotate 1.5s;
               }
-                     
-  
-           
-  
+        
             @keyframes move-and-rotate {
               0% {
                 top:calc(64vh);
@@ -144,7 +134,8 @@ function Servicios() {
         </style>
         <div className='container__othersOnline'>
           <figure className='green_figure'></figure>
-          <p className='othersOnline__text'>REUTILIZACIÓN a través de la reinserción de mercadería remanente y reciclado de fibras en el sistema, conformando una economía circular.</p>
+          <p className='othersOnline__text'>
+          REUTILIZACIÓN a través de la reinserción de mercadería remanente y reciclado de fibras en el sistema, conformando una economía circular. Generamos con el etiquetado digital y nuestras herramientas en la web los medios necesarios para poder facilitar este proceso.</p>
         </div>
         <p className='servicioNoDisponible__text'>Estamos trabajando en el desarrollo de este servicio.</p>
 
@@ -152,12 +143,15 @@ function Servicios() {
     );
   }
 
-  const handleClickReduccion = () => {
+  const handleClickEtiquetado = () => {
     setIsDivEnabled(false);
     setText(
       <>
         <style>
           {`
+            .text__click {
+              display:none;
+            }
           /* rotate stick -145 degrees */
           .stick {
             transform: rotate(-145deg);
@@ -193,7 +187,8 @@ function Servicios() {
         </style>
         <div className='container__othersOnline'>
           <figure className='green_figure'></figure>
-          <p className='othersOnline__text'>REDUCCIÓN de desperdicios, a través de un proceso consciente tomando la decisión de producir sólo aquello que satisface las necesidades del consumidor.</p>
+          <p className='othersOnline__text'>ETIQUETADO DIGITAL. Proponemos reemplazar la etiqueta física por una digital para acompañar la vida útil completa de una prenda. Se conforma de un DNI con la información y cuidados del producto y un PASAPORTE que asegure su trazabilidad.
+</p>
         </div>
         <p className='servicioNoDisponible__text'>Estamos trabajando en el desarrollo de este servicio.</p>
 
@@ -206,8 +201,10 @@ function Servicios() {
     setText(
       <>
         <style>
-          {`
-       
+          {`   
+            .text__click {
+              display:none;
+            }  
        /* rotate stick 145 degrees */
        .stick {
          transform: rotate(145deg);
@@ -242,7 +239,8 @@ function Servicios() {
         </style>
         <div className='container__othersOnline'>
           <figure className='green_figure'></figure>
-          <p className='othersOnline__text'>ANÁLISIS mediante inteligencia artificial con el objetivo de optimizar las decisiones de producción de la marca, en base a la información obtenida de la interacción entre la misma y el consumidor.</p>
+          <p className='othersOnline__text'>ANÁLISIS mediante inteligencia artificial con el objetivo de optimizar las decisiones de producción de la marca, en base a la información obtenida de la interacción entre la misma y el consumidor, generando de esta forma una producción consciente.
+</p>
         </div>
         <p className='servicioNoDisponible__text'>Estamos trabajando en el desarrollo de este servicio.</p>
       </>
@@ -255,6 +253,9 @@ function Servicios() {
       <>
         <style>
           {`
+            .text__click {
+              display:none;
+            }
           /* rotate stick 360 degrees */
           .stick {
             transform: rotate(360deg);
@@ -319,7 +320,7 @@ function Servicios() {
                 strokeWidth="10"
                 d="M285.5 571A285.498 285.498 0 0113.973 373.724l143.909-46.759a134.186 134.186 0 00127.618 92.72V571z"
                 mask="url(#path-1-inside-1_41_3076)"
-                onClick={handleClickReduccion}
+                onClick={handleClickEtiquetado}
               >
               </path>
               <mask id="path-2-inside-2_41_3076" fill="#fff">
@@ -359,25 +360,31 @@ function Servicios() {
                 mask="url(#path-5-inside-5_41_3076)"
                 onClick={handleClickReutilizacion}
               ></path>
-        {/*        <path className='stick'
-            fill="#F0F0F0"
-            d="M286 178.333a5.332 5.332 0 005.333-5.333 5.332 5.332 0 00-5.333-5.333 5.332 5.332 0 00-5.333 5.333 5.332 5.332 0 005.333 5.333zM287 396V173h-2v223h2z"
-          ></path> */}
             </motion.svg>
             <small onClick={handleClickReutilizacion} className='reutilizacion__small__title svg__titles'>REUTILIZACIÓN </small>
             <small onClick={handleClickIntervencion} className='intervencion__small__title svg__titles'>INTERVENCIÓN </small>
             <small onClick={handleClickAnalisis} className='analisis__small__title svg__titles'>ANÁLISIS </small>
             <small onClick={handleClickDigitalizacion} className='digitalizacion__small__title svg__titles'>DIGITALIZACIÓN </small>
-            <small onClick={handleClickReduccion} className='reduccion__small__title svg__titles'>REDUCCIÓN </small>
+            <small onClick={handleClickEtiquetado} className='reduccion__small__title svg__titles'>ETIQUETADO </small>
             <img className='stick' src={stick} alt="" /> 
           </div>
           <div className='container__text'>
             {text}
-            <p className='text__click'>Hacé clic sobre el servicio del que te interese ver más información</p>
-            <button /* style={isDivEnabled ? { display: "block" } : { display: "none" }} */ onClick={executeScroll} className='button__servicio'><small>Ver más</small></button>
+            <p className='text__click'>En la rueda, haz clic en el título del servicio del que quieras ver más información</p>
+            <motion.button whileHover={
+              {
+                scale: 1.1,
+                transition: { duration: 0.2 },
+              }
+            } whileTap={
+              {
+                scale: 0.9,
+                transition: { duration: 0.2 },
+              }
+            } onClick={executeScroll} className='button__servicio'><small>Ver más</small></motion.button>
           </div>
         </div>
-        <div /* style={isDivEnabled ? { display: "flex", position: "relative" } : { display: "flex" }} */ className='container__plugin'>
+        <div className='container__plugin'>
           <span ref={myRef} className='span__scrollHere'></span>
           <div className='container__plugin__text'>
             <p>La intervención es a través de un plugin que posibilita la combinación de prendas para mejorar la experiencia digital. El usuario podrá probarse el producto de manera virtual optimizando la decisión de compra. La herramienta facilita el armado de looks completos y muestra la versatilidad de cada artículo.</p>
@@ -388,8 +395,23 @@ function Servicios() {
           <div className='container__plugin__contacto'>
             <p>Si te interesa conocer más acerca de nuestro servicios, por favor contactanos por alguno de los siguientes medios:</p>
             <div className='container__plugin__contacto__icons'>
-              <FaWhatsapp className='whatsAppIcon' />
-              <AiOutlineMail className='mailIcon' />
+              <motion.a href="https://api.whatsapp.com/send?phone=5491141768429&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." target='_blank' rel='noreferrer'
+              whileHover={{ 
+                scale: 1.1,
+                transition: { type: "spring", stiffness: 900, damping: 20 }
+               }}
+              whileTap={{ scale: 0.9 }}
+              ><FaWhatsapp className='whatsAppIcon' />
+              </motion.a>
+              <motion.a href="mailto:contacto@circularid.com.ar" target='_blank' rel='noreferrer'
+              whileHover={{
+                scale: 1.1,
+                transition: { type: "spring", stiffness: 900, damping: 20 }
+               }}
+              whileTap={{ scale: 0.9 }}
+              ><AiOutlineMail className='mailIcon' />
+              </motion.a>
+            
             </div>
           </div>
         </div>

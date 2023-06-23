@@ -13,7 +13,7 @@ function About() {
         </div>
         <div className='container__text__about'>
           <p className='about__text'>
-          Como seres conviviendo en un mundo digitalizado y en movimiento constante, aunamos el conocimiento del rubro de indumentaria con la ingeniería industrial en busca de la retroalimentación y experimentación constante hacia una nueva identidad circular. El equipo esta conformado por profesionales de ambas disciplinas.
+          Como seres conviviendo en un mundo digital y en movimiento constante, aunamos el conocimiento del rubro de indumentaria con la ingeniería industrial en busca de la retroalimentación y experimentación constante hacia una nueva identidad circular. El equipo está conformado por profesionales de ambas disciplinas.
           </p>
         </div>
         <Navbar/>

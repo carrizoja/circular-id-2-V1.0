@@ -19,7 +19,6 @@
   margin:0 auto;
   justify-content: center;
   margin-bottom: auto;
-
   /* set container text to the center of the page */
 }
 
@@ -43,7 +42,7 @@ margin-right:auto;
 font-style: normal;
 width: 630px;
 font-weight: 300;
-font-size: 17px;
+font-size: 20px;
 line-height: 20px;
 text-align: justify;
 margin-top: 120px;
@@ -58,16 +57,29 @@ font-family: "45 Light";
   height: 53px;
 }
 
+.mailIcon:hover  {
+  color: #6abd45;
+}
+
 .whatsAppIcon {
   color: var(--white);
-  width: 50.58px;
-  height: 50.83px;
+  width: 52.58px;
+  height: 52.83px;
   margin-right: 35px;
+  padding-top: 3px;
+}
+
+.whatsAppIcon:hover {
+  color: #6abd45;
 }
 
 .container__text__icons {
 margin-left: auto;
 margin-right: auto;
+height: 70px;
+display: flex;
+flex-direction: row;
+align-items: center;
 }
 
 
@@ -88,6 +100,7 @@ margin-right: auto;
   .container__text__contacto__description {
 margin-top: 60px;
 margin-bottom: 70px;
+font-size: 15px;
   }
 
   .mailIcon {

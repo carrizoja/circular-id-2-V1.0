@@ -9,8 +9,6 @@
   src: url("../../assets/fonts/45Book/AvenirLTStd-Book.otf");
 }
 
-
-
 /* CSS for Servicio */
 
 .container__servicios {
@@ -29,17 +27,20 @@
   
 }
 
-
-
 .container__title {
   margin-left: 200px;
   margin-right: auto;
 }
 
 .container__text {
-width: 425px;
-margin-top: 30px;
-margin-left: 100px;
+/* width: 425px; */
+width: 550px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left:1%;
+/* margin-top: 30px; */
+/* margin-left: 100px; */
 }
 
 .container__text p {
@@ -55,15 +56,13 @@ color: #F0F0F0;
 
 .text__click {
   margin-top: 3rem;
-}
-
-.text__click {
-  visibility:hidden;
- animation: showSvgTitles;
- transition: ease-out;
- animation-delay: 2.5s;
- transition: 0.5s;
- animation-duration: 20000000s;
+  font-size: 18px !important;
+  text-align: center !important;
+  animation: showSvgTitles;
+  transition: ease-out;
+  animation-delay: 2.5s;
+  transition: 0.5s;
+  animation-duration: 20000000s;
 }
 
 @keyframes showSvgTitles {
@@ -103,15 +102,15 @@ color: #F0F0F0;
   visibility: hidden;
 }
 
-.button__servicio small:hover {
+/* .button__servicio small:hover {
   color: rgb(3, 159, 3);
   transition: 0.2s;
-}
+} */
 
 
 .button__servicio small {
   font-family: "65 Medium";
-  color: #D9D9D9;
+  color: rgb(3, 159, 3);
   font-style: normal;
   font-size: 17px;
 }
@@ -167,6 +166,7 @@ color: #F0F0F0;
   /* CSS for Container Others Online */
   .container__othersOnline {
     display: flex;
+    height: 200px;
    
    }
 
@@ -176,7 +176,6 @@ color: #F0F0F0;
   }
 
   .servicioNoDisponible__text {
-    margin-top: 40px;
     text-align: center !important;
     font-family: "45 Book" !important;
     font-size: 16.5px !important;
@@ -185,9 +184,7 @@ color: #F0F0F0;
   .othersOnline__text {
     margin-left: 8%;
   }   
-  .text__click {
-    display:none;
-  }
+
 
   /* ----------------------------------------------------------- */
 
@@ -300,7 +297,6 @@ opacity: 0.8;
 }
 
 
-
 .intervencion {
   fill:#D9D9D9;
   stroke:#010023; 
@@ -343,7 +339,7 @@ opacity: 0.8;
   font-size: 18px;
   font-family: "45 Book";
   cursor: pointer;
- /*  transform: translate(-100px,-100px); */
+
 }
 
 .reduccion {
@@ -391,6 +387,7 @@ opacity: 0.8;
 }
 
 /* SVG titles small ----------------------------------------------------------  */
+
 .reutilizacion__small__title {
   position: absolute;
   fill:white;
@@ -575,7 +572,9 @@ opacity: 0.8;
     }
 
 .text__click {
-  display:none;
+ /*  font-size: 13px !important;
+  margin-top: 5px; */
+  display: none;
 }
 
 .button__servicio__modal {
@@ -713,7 +712,7 @@ text-align: center;
   }
 
    .servicioNoDisponible__text {
-    margin-top: 1px;
+    margin-top: 3%;
     text-align: center !important;
    }
 
@@ -762,7 +761,7 @@ text-align: center;
     .text__click {
       margin-top: 30px;
       text-align: center !important;
-    
+      font-size: 16px !important;
     }
 
     .container__plugin {
