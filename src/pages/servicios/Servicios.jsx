@@ -72,7 +72,7 @@ function Servicios() {
             }
             100% {
               top:calc(445px);
-              transform: rotate(90deg);
+              transform: rotate(145deg);
             }
           }  
 
@@ -195,7 +195,7 @@ function Servicios() {
           }
           100% {
             top:calc(445px);
-            transform: rotate(-145deg);
+            transform: rotate(90deg);
           }
         }  
           }
@@ -440,9 +440,11 @@ function Servicios() {
             <iframe src="https://www.youtube.com/embed/ZwpPIKgUdYM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
           <div className='container__plugin__video carzoglio'>
+          <h2 className='title__videos'>Digitalización de prenda para Carzoglio</h2>
           <iframe  src="https://www.youtube.com/embed/DAtYk-pZLHw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className='container__plugin__video noTag'>
+          <h2 className='title__videos'>Digitalización de prenda para No Tag</h2>
           <iframe src="https://www.youtube.com/embed/F_dfDExPC1I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className='container__plugin__contacto'>

@@ -246,6 +246,13 @@
   display: none;
 }
 
+.title__videos {
+  font-family: "45 Book";
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .container__plugin__contacto__icons {
   display: flex;
   flex-direction: row;
@@ -649,6 +656,11 @@
     margin-top: 10px; 
   }
 
+  .title__videos {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
   .container__plugin__contacto {
     font-style: normal;
     font-weight: 350;
@@ -662,7 +674,7 @@
   }
 
   .span__scrollHere {
-    height: 30px;
+    height: 15px;
 
   }
 
@@ -685,7 +697,7 @@
 
   .reduccion__small__title {
     font-size: 8px;
-    transform: translateX(-175px)translateY(205px);
+    transform: translateX(-190px)translateY(205px);
   }
 
   .digitalizacion__small__title {
@@ -838,7 +850,7 @@
 
   .reduccion__small__title {
     font-size: 11px;
-    transform: translateX(-285px)translateY(325px);
+    transform: translateX(-300px)translateY(325px);
   }
 
   .digitalizacion__small__title {
