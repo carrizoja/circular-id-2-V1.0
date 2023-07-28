@@ -437,7 +437,8 @@ function Servicios() {
             <p>La intervención es a través de un plugin que posibilita la combinación de prendas para mejorar la experiencia digital. El usuario podrá probarse el producto de manera virtual optimizando la decisión de compra. La herramienta facilita el armado de looks completos y muestra la versatilidad de cada artículo.</p>
           </div>
           <div className='container__plugin__video intervencionVideo'>
-            <iframe src="https://www.youtube.com/embed/ZwpPIKgUdYM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            {/* <iframe src="https://www.youtube.com/watch?v=aoQdlSi-slo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
+            <iframe src="https://www.youtube.com/embed/aoQdlSi-slo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className='container__plugin__video carzoglio'>
           <h2 className='title__videos'>Digitalización de prenda para Carzoglio</h2>
