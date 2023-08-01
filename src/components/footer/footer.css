@@ -136,9 +136,11 @@ footer a {
 .footer__copyright {
   margin-bottom: 4rem;
   color: var(--color-white);
-  font-family: "ConfortaRegular";
+ 
 }
-
+.footer__copyright small {
+  font-family: 'Helvetica Neue', sans-serif;
+}
 
 /* Media Queries for Mobile Devices */
 

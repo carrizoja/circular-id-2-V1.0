@@ -19,7 +19,7 @@ function Contacto() {
             Let's make fashion circular!
           </h2>
           <p className='container__text__contacto__description'>
-            Para que te contemos más sobre nuestros servicios, coordinar una demo o reunirnos por favor contactanos a través de los siguientes medios haciendo click en los íconos:
+            Para que te contemos más sobre nuestros servicios, coordinar una demo o reunirnos; por favor, contactanos a través de los siguientes medios haciendo click en los íconos:
           </p>
           <div className='container__text__icons'>
             <motion.a href="https://api.whatsapp.com/send?phone=5491141768429&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." target='_blank' rel='noreferrer'
