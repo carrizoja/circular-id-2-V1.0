@@ -18,7 +18,7 @@ function Footer() {
           </div>
           <div className='footer__socials'>
             <div className='container__contactData'>
-              <small>circularid@gmail.com</small>
+              <small>contacto@circularid.com.ar</small>
               <small>+54911 40 55 3303</small>
             </div>
             <div className='container__socialIcons'>

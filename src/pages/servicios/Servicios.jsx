@@ -20,7 +20,7 @@ function Servicios() {
   const [isActive, setIsActive] = React.useState(false);
 
   const [text, setText] = useState(
-    <p>Nuestros servicios se enfocan en soluciones prácticas, interactivas y personalizadas que ayudan a las empresas de moda a reducir su impacto ambiental, potenciar su marketplace y a su vez creando valor económico y social.</p>
+    <p>Nuestros servicios se enfocan en soluciones prácticas, interactivas y personalizadas que ayudan a las empresas de moda a reducir su impacto ambiental, potenciar su marketplace creando valor económico y social.</p>
   );
   const [isDivEnabled, setIsDivEnabled] = useState(false);
   const myRef = useRef(null)
@@ -449,7 +449,7 @@ function Servicios() {
           <iframe src="https://www.youtube.com/embed/F_dfDExPC1I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div className='container__plugin__contacto'>
-            <p>Si te interesa conocer más acerca de nuestro servicios, por favor contactanos por alguno de los siguientes medios:</p>
+            <p>Si te interesa conocer más acerca de nuestros servicios, por favor contactanos por alguno de los siguientes medios:</p>
             <div className='container__plugin__contacto__icons'>
               <motion.a href="https://api.whatsapp.com/send?phone=5491141768429&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." target='_blank' rel='noreferrer'
               whileHover={{ 
