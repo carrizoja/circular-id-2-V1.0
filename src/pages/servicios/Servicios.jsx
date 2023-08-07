@@ -20,7 +20,7 @@ function Servicios() {
   const [isActive, setIsActive] = React.useState(false);
 
   const [text, setText] = useState(
-    <p>Nuestros servicios se enfocan en soluciones prácticas, interactivas y personalizadas que ayudan a las empresas de moda a reducir su impacto ambiental, potenciar su marketplace creando valor económico y social.</p>
+    <p>Nuestros servicios se enfocan en soluciones prácticas, interactivas y personalizadas que ayudan a las empresas de moda a reducir su impacto ambiental y potenciar su marketplace creando valor económico y social.</p>
   );
   const [isDivEnabled, setIsDivEnabled] = useState(false);
   const myRef = useRef(null)
