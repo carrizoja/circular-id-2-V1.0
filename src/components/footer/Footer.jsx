@@ -19,7 +19,7 @@ function Footer() {
           <div className='footer__socials'>
             <div className='container__contactData'>
               <small>contacto@circularid.com.ar</small>
-              <small>+54911 41 76 8429</small>
+              <small>+54911 4176 8429</small>
             </div>
             <div className='container__socialIcons'>
               <motion.a href="mailto:contacto@circularid.com.ar" target='_blank' rel='noreferrer' whileHover={{
