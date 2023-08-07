@@ -224,4 +224,7 @@ display: none;
   .container__grid {
     width: 95%;
   }
+  .footer__copyright {
+    margin-right: 5.2%;
+  }
 }
